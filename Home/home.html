@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css" class="css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="main">
+                <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            </div>
+            <a href="">
+                <span>Phim Mới</span>
+                <div class="liquid"></div>
+            </a>
+            <a href="">
+                <span>Phim Lẻ</span>
+                <div class="liquid"></div>
+            </a>
+            <a href="">
+                <span>Phim Bộ</span>
+                <div class="liquid"></div>
+            </a>
+            <a href="">
+                <span>Trailer</span>
+                <div class="liquid"></div>
+            </a>
+        </div>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <footer>
+        <div class="search">
+            <input type="search" id="search" placeholder="" onkeyup="searchfunction()">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+        <div class="container-1">
+            <!-- iron1 -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Iron Man 1</h3>
+                        <img src="https://wallpaperaccess.com/full/1925947.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Tỉ phú, ông trùm ngành công nghiệp hay nhà phát minh thiên tài Tony Stark (Robert Downey,
+                            Jr. thủ vai) từng rơi vào tay khủng bố với mục đích giúp chúng xây dựng vũ khí hủy diệt, khi
+                            đang tiến hành thử nghiệm vũ khí tại nhiều quốc gia. Trong thời gian bị giam cầm, Stark tự
+                            chế tạo bộ giáp giúp bản thân trốn thoát khỏi những kẻ bắt cóc.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <iron-2> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class=""></i>
+                        <h3>Iron Man 2</h3>
+                        <img src="https://wallpapercave.com/wp/wp3198167.jpg">
+
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Sau khi tiết lộ danh tính “Iron Man” trước giới truyền thông, nhà phát minh tỉ phú Tony
+                            Stark hiện phải đối mặt với sức ép từ nhiều phía trong việc chia sẻ công nghệ, đặc biệt là
+                            từ phía quân đội chính phủ. Nhưng, Stark vẫn từ chối tiết lộ bí mật của bộ giáp vì không
+                            muốn công nghệ bị lợi dụng vào những mục đích không chính thốn.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <iron-3> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-apple"></i>
+                        <h3>Iron Man 3</h3>
+                        <img src="https://wallpapercave.com/wp/wp9219239.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Trong Người Sắt 3, Tony Stark đối mặt với căng thẳng và vết thương tâm lý do những sự kiện
+                            trong Biệt đội siêu anh hùng gây ra, trong khi đang điều tra một loạt các vụ tấn công khủng
+                            bố do nhân vật Mandarin bí ẩn lãnh đạo, đồng thời tạo nên xung đột với kẻ thù cũ là Aldrich
+                            Killian...</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <incredle hulk> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>The Incredible Hulk</h3>
+                        <img src="https://wallpapercave.com/wp/wp6705852.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Nhà khoa học Bruce Banner với mong muốn tìm ra cách chế tạo vũ khí từ
+                            tia gamma đã không cẩn thận để các tế bào trong cơ thể bị ô nhiễm và biến thành hình dạng
+                            của Hulk. Banner đã quyết định chia tay với Betty Ross cũng là cách để
+                            lẩn trốn kẻ thù, Gen. Đại tướng Thunderbolt Ross và Banner nhanh
+                            chóng phải đối mặt với hiểm họa mới: Abomination...</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <captain america> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Captain America: The First Avenger</h3>
+                        <img src="https://wallpapercave.com/dwp1x/wp3775632.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Quay ngược về quá khứ,ta thấy anh chàng Steve Rogers lại một lần nữa bị từ chối nhập ngũ vì
+                            thể trạng gầy gò cùng hàng loạt tiền sử bệnh lý.Về sau, anh trở thành thí nghiệm của tổ chức
+                            trong quân đội và trở thành một thanh niên cường tráng với sức mạnh phi thường.Captain chính
+                            là một trong những
+                            siêu anh hùng đầu tiên của biệt đội Avengers...
+                        </p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <Thor> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Thor</h3>
+                        <img src="https://wallpaperaccess.com/full/645142.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Tại Asgard,Thor,được trao cho cây búa Mjolnir,
+                            người được cho sẽ kế vị ngai vàng từ cha.Chàng trai trẻ lại cố tình gây hấn
+                            với xứ Jotunheim và nguy kịch khiến Odin phải đích thân ra tay giải cứu.Odin tức giật tước
+                            bỏ sức
+                            mạnh và giàng Thor cùng cây búa thần xuống Trái Đất. Để chứng tỏ mình xứng đáng, anh phải
+                            nâng được cây búa và tìm cách trở về giải cứu Asgard.
+                        </p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <the avengers> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>The Avengers</h3>
+                        <img src="https://c4.wallpaperflare.com/wallpaper/706/658/500/the-avengers-wallpaper-preview.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Loki, em trai của Thor với mong muốn chiếm được khối Tesseract đã gặp gỡ một thủ
+                            lĩnh của chủng tộc ngoài Trái Đất để lấy cây trượng điều khiển tâm trí. Từ đó,
+                            hắn sử dụng quân đội của Chitauri để khơi mào cuộc tấn công xâm chiếm Trái Đất.
+                            Nick Fury – Giám đốc của S.H.I.E.L.D quyết định phục hồi lại
+                            Avengers. Các siêu anh hùng được tập hợp và chống lại mọi kẻ thù.
+                            <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <thor 2> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Thor: The Dark World</h3>
+                        <img src="https://wallpapercave.com/wp/wp3079593.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Sau thất bại từ phần phim trước, Loki bị nhốt tại một phòng giam ở Asgard. Ở một diễn biến
+                            khác, Malekith lãnh đạo những người Dark Elf gây ra những đe dọa đối với Chín Cõi Giới. Hắn
+                            đã tìm lại một hòn đá Vô cực khác mang tên Aether và mưu đồ sử dụng chính hòn đá này để phá
+                            hủy Chín Cõi Giới. Trước tình thế này, Thor đã phải bắt tay với những người bạn Trái Đất và
+                            Loki để chặn đứng hành động của hắn.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <cap-2> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Captain America: The Winter Soldier</h3>
+                        <img src="https://wallpapercave.com/dwp1x/wp5271847.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Sau sự cố Nick Fury bị tấn công, Steve Rogers đã nhận ra rằng, SHIELD bị thâm
+                            nhập bởi các đặc vụ của HYDRA nhiều năm. Và Chiến binh Mùa đông – vốn dĩ là Bucky Barnes,
+                            sát thủ đáng gờm nhất của HYDRA. Trong Thế
+                            chiến 2, Bucky không chết. Anh ta bị HYDRA bắt giữ và tiến hành lập trình lại não.
+                            Khi nhận ra sự thật này, Captain đã kết hợp với Black Widow và Falcon và tìm lại người bạn
+                            cũ Bucky.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <avenger-2> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Avengers 2: The Age of Ultron</h3>
+                        <img
+                            src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2021/03/IMG_1741-scaled.jpeg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Cây Trượng của Loki bị đội Avengers thu giữ. Cây
+                            Trượng sau đó được Tony Stark trưng dụng cho chương trình Ultron – một chương trình gìn giữ
+                            hòa bình do anh xây dựng.Chương trình này lại tạo ra một trí tuệ nhân tạo
+                            mang trong mình âm mưu thanh trừng thế giới. Ultron đã kết
+                            hợp với Quicksilver và Scarlet Witch – 2 kẻ siêu năng lực nhằm thực hiện âm mưu của
+                            mình.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <ant-man> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Ant-Man</h3>
+                        <img
+                            src="https://w0.peakpx.com/wallpaper/198/324/HD-wallpaper-ant-man-2015.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Scott Lang – một kẻ mang
+                            tiền án trộm cắp tình cờ gặp Hank Pym – một nhà khoa học. Bộ giáp Ant-Man sở hữu khả năng
+                            thu nhỏ đã được nhà khoa học trao cho anh ta. Sau đó, anh ta cùng với Hope van Dyne – con
+                            gái của nhà khoa học Hank Pym phối hợp tìm cách đối phó với Yellowjacket – học
+                            trò cũ của nhà khoa học này để cướp một món vũ khí nguy hiểm</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <captain-3> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Captain America: Civil war</h3>
+                        <img src="https://ramestar.vn/media/uploaded/Marvel-Civil-War-alternate-poster.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Sau này mọi hiểu lầm được giải tỏa, nhóm của Cap lui về ở ẩn vì không chấp nhận chịu sự quản
+                            lý của chính phủ, nhưng vẫn giữ liên lạc với SHIELD và Tony Stark. Cũng trong Captain
+                            America phần 3 này là sự xuất hiện hoàn toàn mới của Spider-Man Peter Parker do nam diễn
+                            viên trẻ Tom Holland thủ vai, đánh dấu sự trở lại của Nhện dưới mái nhà Marvel và MCU.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <doctor> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Doctor Strange</h3>
+                        <img
+                            src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/02/doctor-strange-2-poster-social-featured.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Doctor Strange giải thích nguồn gốc xuất hiện và truyền từ đời này qua
+                            đời khác của vị trí phù thủy tối thượng, xoay quanh nhân vật Ancient One và bác sĩ Stephen
+                            Strange. Do bị tai nạn xe hơi nghiêm trọng mà bác sĩ phẫu thuật Strange bị liệt 2 bàn tay đã
+                            đến Tây Tạng để tìm kiếm phương thuốc chữa bệnh để rồi trở thành Doctor Strange đầy quyền
+                            năng.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <thor-3> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Thor: Ragnarok</h3>
+                        <img src="https://p4.wallpaperbetter.com/wallpaper/622/490/397/movie-thor-ragnarok-chris-hemsworth-thor-wallpaper-preview.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Thor bị bắt giam ở hành tinh Muspelheim và được Surtur kể lại rằng Loki đang giam cầm Odin ở
+                            một hành tinh khác, người ngồi trên ngai vàng Asgard thực ra là Loki. Thor đánh bại Surtur
+                            và trở về Asgard và bắt Loki đưa đi tìm Odin. Cả 2 đến Na Uy và tại đây Odin đã trăn trối
+                            rồi qua đời... </p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <spider man> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Spider Man: Homecoming</h3>
+                        <img src="https://wallpaperaccess.com/full/243562.jpg">
+                            
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Sau nội chiến giữa các siêu anh hùng, Stark nói với Peter Parker rằng, Peter Parker chưa có
+                            đủ sẵn sàng để có thể trở thành một “mảnh ghép” của Avengers. Vì vậy, Peter Parker tiếp tục
+                            việc học tập của mình. Tuy nhiên, với bộ áo giáp mà Tony Stark tặng, Peter Parker vẫn có thể
+                            tiếp tục công cuộc của một người hùng – đó chính là bảo vệ New York dưới sự giám sát của
+                            Happy Hogan.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <avenger-3> -->
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <i class="fab fa-windows"></i>
+                        <h3>Avengers: Infinity War</h3>
+                        <img src="https://imageio.forbes.com/blogs-images/scottmendelson/files/2018/04/image001.jpg?format=jpg&width=960">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p> Trong trận chiến của đội Avengers để “úp sọt” Thanos nhưng bất thành và đại bại, trước khi
+                            đồng ý giao viên Time Stone cho Thanos, Doctor Strange hé lộ rằng chỉ có duy nhất 1 khả năng
+                            để đảo ngược tình thế đó là giữ mạng sống cho Iron Man.</p>
+                        <a href="#" type="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <end card> -->
+        </div>
+    </footer>
+
+
+    <script src="home.js"></script>
+</body>
+
+</html>
