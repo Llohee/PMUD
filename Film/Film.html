@@ -60,15 +60,30 @@
                         <video loop autoplay muted style="display: flex" width="500px" controls>
                             <source src="EndGame.mp4">
                         </video>
-                        <dv clas="flm-info">
+                        <div clas="film-info">
                             <h1>Avenger</h1>
                             <div class="film-info-text">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium hic
                                 adipisci illo incidunt, necessitatibus modi itaque, distinctio suscipit accusantium
                                 aperiam, cupiditate ea enim quod debitis cumque sit eum iste.
                             </div>
-                        </dv>
+                            <div class="rating">
+                                <form class="fr" action="">
+                                    <!-- <label class="fr__label" for="face-rating">Rate your experience with us</label> -->
+                                    <div class="fr__face" role="img" aria-label="Straight face">
+                                        <div class="fr__face-right-eye" data-right></div>
+                                        <div class="fr__face-left-eye" data-left></div>
+                                        <div class="fr__face-mouth-lower" data-mouth-lower></div>
+                                        <div class="fr__face-mouth-upper" data-mouth-upper></div>
+                                    </div>
+                                    <input class="fr__input" id="face-rating" type="range" value="2.5" min="0" max="5" step="0.1">
+                                </form>
+                            </div>
+                        </div>
+                        
                     </div>
+                  
+               
                     <form>
                         <div class="heart__icon center__display">
                             <i class="far fa-heart"></i>
@@ -114,6 +129,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="Film.js"></script>
 </body>
 
