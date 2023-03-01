@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" class="">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-2" id="LoginForm" style="display:block" >
+        <form action="">
+            <h2>Login</h2>  
+            <div class="type">
+                <input type="text" required id="login-username">
+                <label>User Name</label>
+                <p id="user-login-err" style="color:red"></p>
+                
+            </div>
+            <div class="type">
+                <input type="password" required id="login-password">
+                <label>Password</label>
+            </div>
+            <p id="pw-login-err" style="color:red"></p>
+            <button id="submit-login">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </button>
+            <button id="MoveSignUp-btn" >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Sign Up
+            </button>
+        </form>
+    </div>
+       <!-- Sign Up Form -->
+       <div class="container-2" id="SignUp-Form" style="display:none">
+        <h2>Sign Up</h2>
+        <form action="">
+            <div class="type">
+                <input type="text" required id="signup-username">
+                <label>User Name</label>
+                <p id="username-err" style="color:red"></p>
+            </div>
+            <div class="type">
+                <input type="password" required spellcheck="false" id="signup-password" onkeyup="handleChange()">
+                <label>Password</label>
+                <p id="password-err" style="color:red"></p>
+
+            </div>
+            <button id="submit-signUp">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </button>
+            <button id="MoveLogin-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </button>
+        </form>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>

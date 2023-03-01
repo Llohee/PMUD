@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Film.css" class="">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="main">
+                <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            </div>
+            <a href="">
+                <span>Phim Mới</span>
+                <div class="liquid"></div>
+            </a>
+            <a href="">
+                <span>Phim Lẻ</span>
+                <div class="liquid"></div>
+            </a>
+            <a href="">
+                <span>Phim Bộ</span>
+                <div class="liquid"></div>
+            </a>
+            <a href="">
+                <span>Trailer</span>
+                <div class="liquid"></div>
+            </a>
+        </div>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="infor"><img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png"
+                class="avatar">Giang</a>
+        </br>
+        </br>
+        <button><a href="#">Địa Chỉ</a></button>
+        <button><a href="#">Email</a></button>
+        <button id="form-visa"><a href="http://127.0.0.1:5501/Form/visa/index.html">Thanh Toán</a></button>
+        <!-- <a href="#"><button>Email</button></a> -->
+        <!-- <a href="#"><button>Thanh Toán</button></a> -->
+        <!-- <a href="#"><button>Contact</button></a> -->
+
+        <a href="#"><button id="logout-btn"><img src="https://cdn-icons-png.flaticon.com/512/3889/3889524.png"
+                    style="width:50px">Logout</button></a>
+    </div>
+    <footer>
+        <div class="container-3 center__display">
+            <div class="top">
+                <div class="video__container-3">
+                    <video width="1000px" height="600" controls>
+                        <source src="video.mp4">
+                    </video>
+                    <div class="content">
+                        <video loop autoplay muted style="display: flex" width="500px" controls>
+                            <source src="EndGame.mp4">
+                        </video>
+                        <dv clas="flm-info">
+                            <h1>Avenger</h1>
+                            <div class="film-info-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium hic
+                                adipisci illo incidunt, necessitatibus modi itaque, distinctio suscipit accusantium
+                                aperiam, cupiditate ea enim quod debitis cumque sit eum iste.
+                            </div>
+                        </dv>
+                    </div>
+                    <form>
+                        <div class="heart__icon center__display">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="form__info center__display">
+                            <input type="text" name="user" id="user" placeholder="Your user name">
+                            <input type="text" name="comment" id="comment" placeholder="Add a short comment here">
+                        </div>
+                        <button type="submit" class="submit__btn">
+                            Submit
+                        </button>
+                    </form>
+                    <div class="likes__count">
+                        <i class="far fa-heart"></i>
+                        <small class="count">0</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__container-3 center__display">
+                <h1>Bình Luận</h1>
+                <!-- <div class="comment__card">
+                    <div class="pic center__display">
+                        A
+                    </div>
+                    <div class="comment__info">
+                        <small class="nickname">
+                            UserNameHere
+                        </small>
+                        <p class="comment">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, in magnam! Libero?
+                        </p>
+                        <div class="comment__bottom">
+                            <div class="heart__icon--comment">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <button>
+                                Reply
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+    <script src="Film.js"></script>
+</body>
+
+</html>
