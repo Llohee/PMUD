@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Store</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="main">
+        <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      </div>
+      <a href="">
+        <span>Phim Mới</span>
+        <div class="liquid"></div>
+      </a>
+      <a href="">
+        <span>Phim Lẻ</span>
+        <div class="liquid"></div>
+      </a>
+      <a href="">
+        <span>Phim Bộ</span>
+        <div class="liquid"></div>
+      </a>
+
+      <a href="">
+        <span>Shop</span>
+        <div class="liquid"></div>
+      </a>
+    </div>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" class="infor"><img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png"
+        class="avatar">Giang</a>
+    </br>
+    </br>
+    <button><a href="#">Địa Chỉ</a></button>
+    <button><a href="#">Email</a></button>
+    <button id="form-visa"><a href="http://127.0.0.1:5501/Form/visa/index.html">Thanh Toán</a></button>
+    <a href="#"><button id="logout-btn"><img src="https://cdn-icons-png.flaticon.com/512/3889/3889524.png"
+          style="width:50px">Logout</button></a>
+  </div>
+
+  <footer>
+  <div class="navbar">
+    <a href="index.html">
+      <h2>Marvel Store</h2>
+    </a>
+
+    <a href="cart.html">
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div id="label" class="text-center"></div>
+  <div class="shopping-cart" id="shopping-cart"></div>
+</footer>
+</body>
+<script src="src/Data.js"></script>
+<script src="src/cart.js"></script>
+
+</html>

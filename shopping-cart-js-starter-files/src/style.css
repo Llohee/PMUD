@@ -1,0 +1,358 @@
+/**
+* ! Changing default styles of the browser
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: sans-serif;
+} */
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* header  */
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background: linear-gradient(#141e30,#243b55);
+  border-bottom: 2px solid black;
+}
+.container a {
+  position:relative;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  display:block;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width:287px;
+  overflow:hidden;
+  border-radius: 40px;
+}
+.container a span{
+  position:relative;
+  color: #fff;
+  font-size: 17px;
+  font-family: Arial;
+  letter-spacing: 8px;
+  z-index: 1;
+}
+a .liquid{
+  position: absolute;
+  top:-80%;
+  left: 0;
+  width: 287px;
+  height:230px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: .5;
+}
+a .liquid::after,
+a .liquid::before{
+  content:'';
+  width: 170%;
+  height:250%;
+  position:absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+a .liquid::before{
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite; 
+}
+a .liquid::after{
+  border-radius: 45%;
+  background:rgba(20, 20, 20, .5);
+  animation: animate 10s linear infinite;
+}
+a:hover .liquid{
+  top: -120px;
+}
+@keyframes animate{
+  0%{
+      transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100%{
+      transform: translate(-50%, -75%) rotate(360deg);
+
+  }
+}
+/* menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#141e30,#243b55);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav  button {
+  position:relative;
+  display:inline-block;
+  /* padding: 10px 20px; */
+  color:#03e9f4;
+  
+   /* color: #818181; */
+
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.sidenav button a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 20px; */
+}
+.sidenav a button{
+  margin-left: -50px;
+  text-align: center;
+}
+
+.sidenav a:hover .sidenav a{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  color: #575757;
+  /* height:; */
+  
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+/**
+* ! Navbar STyles are here
+**/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #212529;
+  color: white;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+/**
+* ! Shop items styles are here
+**/
+footer{
+  background:#181f2be8;
+  height:100vh;
+}
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.item {
+  border: 2px solid #212529;
+  border-radius: 4px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: red;
+}
+
+.bi-plus-lg {
+  color: green;
+}
+
+/**
+* ! style rules for label and some buttons
+**/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+.removeAll {
+  background-color: red;
+}
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/**
+* ! style rules for shopping-cart
+**/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/**
+* ! style rules for cart-item
+**/
+
+.cart-item {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+.type p{
+  margin-top:-10px;
+}
+.avatar{ 
+  width: 50px;
+}
+.infor{
+  display: flex;
+}
+.sidevav button:hover .sidevav button a {
+  color:#03e9f4;
+}
+#logout-btn{
+  display:flex;
+  align-items: center;
+  gap: 10px;
+}
