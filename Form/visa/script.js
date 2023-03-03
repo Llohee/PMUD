@@ -83,7 +83,42 @@ new Vue({
 });
 let submitvisa = document.getElementById("submit-btn")
 
-submitvisa.onclick = function() 
-{
-  window.location.href = "http://127.0.0.1:5501/Form/home.html";
-}
+// submitvisa.onclick = function() 
+// {
+//   window.location.href = "http://127.0.0.1:5501/Form/home.html";
+// }
+let apiUser = "http://localhost:3000/user";
+//get user
+const getUser = async () => {
+  const response = await fetch(apiUser);
+  const data = await response.json();
+  return data;
+};
+//function add Card 
+let cardName = document.getElementById('cardName')
+let cardNumber = document.getElementById('cardNumber');
+
+
+submitvisa.onclick = addEventListener("click", (e) => {
+  e.preventDefault();
+  if (cardNumber.value == "" || cardName.value == "") {
+    alert('Please input your Card Number and Card Name ')
+    
+  } else {
+    const user = {
+      cardNumber: cardNumber.value,
+      cardName: cardName.value,
+    };
+    fetch(apiUser, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+      alert("Sign up successful ");
+      window.location = 'http://127.0.0.1:5501/Form/home.html'
+  }
+});

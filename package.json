@@ -1,5 +1,25 @@
 {
   "dependencies": {
-    "firebase": "^9.17.1"
-  }
+    "firebase": "^9.17.1",
+    "json": "^11.0.0"
+  },
+  "name": "22222",
+  "description": "��#\u0000 \u0000P\u0000M\u0000U\u0000D\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "login.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Llohee/PMUD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Llohee/PMUD/issues"
+  },
+  "homepage": "https://github.com/Llohee/PMUD#readme"
 }

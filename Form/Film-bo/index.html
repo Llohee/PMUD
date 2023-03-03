@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css" class="css">
+    <link rel="stylesheet" href="index.css" class="">
     <title>Document</title>
 </head>
 
@@ -27,7 +27,7 @@
                 <span>Phim Bộ</span>
                 <div class="liquid"></div>
             </a>
-           
+
             <a href="/Shop/index.html">
                 <span>Shop</span>
                 <div class="liquid"></div>
@@ -44,29 +44,30 @@
         <div class="container-1">
         </div>
     </footer>
-    <script src="home.js"></script>
-    <script>
-     fetch('http://localhost:3000/user')
-     .then(res => {
-        return res.json();
-     })
-     .then(data => {
-        data.forEach(user => {
-            const markup = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#" class="infor"><img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png"
-                class="avatar">${user.username}</a>
-        </br>
-        </br>
-        <button><a href="#">Địa Chỉ</a></button>
-        <button><a href="#">Email</a></button>
-        <button id="form-visa"><a href="http://127.0.0.1:5501/Form/visa/index.html">Thanh Toán</a></button>
-        <a href="#"><button id="logout-btn">Logout</button></a>
-        `;
-            document.querySelector('#mySidenav').insertAdjacentHTML('beforeend', markup)
-        });
-     })
-     .catch(error => console.log(error));
+    <script src="index.js">
     </script>
+    <script>
+        fetch('http://localhost:3000/user')
+        .then(res => {
+           return res.json();
+        })
+        .then(data => {
+           data.forEach(user => {
+               const markup = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <a href="#" class="infor"><img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png"
+                   class="avatar">${user.username}</a>
+           </br>
+           </br>
+           <button><a href="#">Địa Chỉ</a></button>
+           <button><a href="#">Email</a></button>
+           <button id="form-visa"><a href="http://127.0.0.1:5501/Form/visa/index.html">Thanh Toán</a></button>
+           <a href="#"><button id="logout-btn">Logout</button></a>
+           `;
+               document.querySelector('#mySidenav').insertAdjacentHTML('beforeend', markup)
+           });
+        })
+        .catch(error => console.log(error));
+       </script>
 </body>
 
 </html>
