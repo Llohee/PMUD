@@ -1,13 +1,9 @@
 {
   "user": [
     {
-      "id": 1,
-      "username": "nggiang141@gmail.com",
-      "password": "12345678",
-      "avatar": "https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png",
-      "cardNumber": "",
-      "cardName": ""
+      "username": "1",
+      "password": "1",
+      "id": 1
     }
-    
   ]
 }
