@@ -121,11 +121,39 @@ let TotalAmount = () => {
       .reduce((x, y) => x + y, 0);
     // console.log(amount);
     label.innerHTML = `
-    <h2>Total Bill : $ ${amount}</h2>
-    <button class="checkout">Checkout</button>
+    <h2 style="color:#fff; font-size: 40px">Total Bill : $ ${amount}</h2>
+    <button class="checkout" id="checkoutbtn">Checkout</button>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `;
   } else return;
 };
 
 TotalAmount();
+
+//nav
+let formmenu = document.getElementById("FormMenu")
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+//checkout
+let adressform = document.getElementById("address-form")
+
+let checkout = document.getElementById("checkoutbtn")
+checkout.onclick = function() {
+    adressform.style.display = "block";
+}
+//address
+let adressbtn = document.getElementById("adress-form")
+let adressclose = document.getElementById("adress-close")
+adressclose.onclick = function () {
+
+    adressform.style.display = "none"
+}

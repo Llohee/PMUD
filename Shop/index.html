@@ -47,27 +47,50 @@
     <a href="#"><button id="logout-btn"><img src="https://cdn-icons-png.flaticon.com/512/3889/3889524.png"
           style="width:50px">Logout</button></a>
   </div>
-<footer>
-  <div class="navbar">
-    <a href="index.html">
-      <h2>Marvel Store</h2>
-    </a>
+  <footer>
+    <div class="navbar">
+      <a href="index.html">
+        <h2>Marvel Store</h2>
+      </a>
 
-    <a href="cart.html">
-      <div class="cart">
-        <i class="bi bi-cart2"></i>
-        <div id="cartAmount" class="cartAmount">0</div>
-      </div>
-    </a>
+      <a href="cart.html">
+        <div class="cart">
+          <i class="bi bi-cart2"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
+        </div>
+      </a>
 
-  </div>
-  <div class="shop" id="shop">
+    </div>
+    <div class="shop" id="shop">
+    </div>
+  </footer>
+  
 
 
-  </div>
-</footer>
 </body>
 <script src="src/Data.js"></script>
 <script src="src/main.js"></script>
+<script>
+  fetch('http://localhost:3000/user')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      data.forEach(user => {
+        const markup = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#" class="infor"><img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png"
+             class="avatar">${user.username}</a>
+     </br>
+     </br>
+     <button><a href="#">Địa Chỉ</a></button>
+     <button><a href="#">Email</a></button>
+     <button id="form-visa"><a href="http://127.0.0.1:5501/Form/visa/index.html">Thanh Toán</a></button>
+     <a href="#"><button id="logout-btn">Logout</button></a>
+     `;
+        document.querySelector('#mySidenav').insertAdjacentHTML('beforeend', markup)
+      });
+    })
+    .catch(error => console.log(error));
+</script>
 
 </html>

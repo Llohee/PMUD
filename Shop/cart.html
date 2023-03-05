@@ -36,7 +36,7 @@
     </div>
   </header>
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#" class="infor"><img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png"
         class="avatar">Giang</a>
     </br>
@@ -45,7 +45,7 @@
     <button><a href="#">Email</a></button>
     <button id="form-visa"><a href="http://127.0.0.1:5501/Form/visa/index.html">Thanh Toán</a></button>
     <a href="#"><button id="logout-btn"><img src="https://cdn-icons-png.flaticon.com/512/3889/3889524.png"
-          style="width:50px">Logout</button></a>
+          style="width:50px">Logout</button></a> -->
   </div>
 
   <footer>
@@ -66,8 +66,53 @@
   <div id="label" class="text-center"></div>
   <div class="shopping-cart" id="shopping-cart"></div>
 </footer>
+<!-- address form -->
+<div class="adress-form" id="address-form">
+  <div class="adress-form-content">
+    <h2>Chọn địa chỉ nhận hàng <button id="adress-close">-</button></h2>
+    <form action="">
+      <p>Vui lòng chọn địa chỉ</p>
+      <select name="" id="">
+        <option value="">Chọn địa điểm</option>
+        <option value="">Hà Nội</option>
+      </select>
+      <select name="" id="">
+        <option value="">Quận\Huyện</option>
+        <option value="">Hà Nội</option>
+      </select>
+      <select name="" id="">
+        <option value="">Phường\Xã</option>
+        <option value="">Hà Nội</option>
+      </select>
+      <input type="text" placeholder="Số nhà,Tên đường">
+      <button>Xác Nhận</button>
+    </form>
+  </div>
+
+</div>
 </body>
 <script src="src/Data.js"></script>
 <script src="src/cart.js"></script>
-
+<script>
+  fetch('http://localhost:3000/user')
+  .then(res => {
+     return res.json();
+  })
+  .then(data => {
+     data.forEach(user => {
+         const markup = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#" class="infor"><img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png"
+             class="avatar">${user.username}</a>
+     </br>
+     </br>
+     <button><a href="#">Địa Chỉ</a></button>
+     <button><a href="#">Email</a></button>
+     <button id="form-visa"><a href="http://127.0.0.1:5501/Form/visa/index.html">Thanh Toán</a></button>
+     <a href="#"><button id="logout-btn">Logout</button></a>
+     `;
+         document.querySelector('#mySidenav').insertAdjacentHTML('beforeend', markup)
+     });
+  })
+  .catch(error => console.log(error));
+ </script>
 </html>
