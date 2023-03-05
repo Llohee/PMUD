@@ -140,21 +140,21 @@ const product15 = {
 }
 const product16 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://i.pinimg.com/736x/de/c5/4d/dec54d85b8beda1d7da42bec222f8e8f.jpg',
+  image: 'https://imageio.forbes.com/blogs-images/scottmendelson/files/2017/10/DMQuyI5V4AAUHP0.jpg?format=jpg&width=960',
   nameproduct: 'Black Panther',
   info: 'Sau khi xuất hiện trong CA: Civil War, bộ phim Black Panther đưa người xem đến vương quốc bí ẩn Wakanda nằm ở Châu Phi. Nhờ khai thác được nguồn kim loại quý vibranium mà người Wakanda đã đạt được nền khoa học kĩ thuật vô cùng tiến bộ, phát triển hơn phương Tây hàng ngàn năm về mọi mặt.'
 
 }
 const product17 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://cdn.europosters.eu/image/750/posters/ant-man-and-the-wasp-dynamic-i61120.jpg',
+  image: 'https://lumiere-a.akamaihd.net/v1/images/cb_character_online_ooh_1-sht_antman_v3_lg-750x1111_132b319e.jpeg',
   nameproduct: 'Ant-man and the Wasp',
   info: 'Bộ phim lấy bối cảnh sau phần 1, nằm ở cùng thời điểm cuộc chiến Infinity War đang diễn ra. Phim giải thích kĩ hơn về lý thuyết lượng tử của tiến sĩ Hank Pym, cùng với việc Scott Lang tìm thấy bà vợ Janet van Dyne của tiến sĩ Pym đang mắc kẹt ở thế giới lượng tử.'
 
 }
 const product18 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_.jpg',
+  image: 'https://imageio.forbes.com/blogs-images/scottmendelson/files/2018/12/Captain-Marvel-Poster-B-1200x675.jpg?format=jpg&width=1200',
   nameproduct: 'Captain Marvel',
   info: 'Năm 1995, Carol Danvers (Vers) thức dậy trên vùng đất Hala, quê hương của đế chế Kree. Trong đầu cô luôn có một mảnh ký ức về vụ rơi máy bay, về hình ảnh một người phụ nữ bị sát hại ngay trước mặt mình và tất cả đều dừng lại trước thời điểm cô nhận được sức mạnh này.'
 
@@ -168,21 +168,21 @@ const product19 = {
 }
 const product20 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://play-lh.googleusercontent.com/_gIJ5eszlkwDw7tWekePeapreSRDlQti4XtsivYKUOUq8I-wEqROEv8kjHm3EXyfdrvjS92d-VDQFNR-AyA=w240-h480-rw',
+  image: 'https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1558547026541-P8GJJHU43RVTC7DSCFSL/image-asset.jpeg',
   nameproduct: 'Spider-man: Far From Home',
   info: 'Khi thế giới dần ổn định cuộc sống sau khi Thanos biến mất. Lần này team của Peter Parker được đi du lịch châu Âu, nhưng khi đang ở nước ngoài thì một ác nhân là Mysterio xuất hiện, hắn đánh lừa sự cả tin của Peter để chiếm quyền kiểm soát AI của Tony Stark để lại là Friday.'
 
 }
 const product21 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://collider.com/wp-content/uploads/2020/02/black-widow-poster-scarlett-johansson.jpg',
+  image: 'https://imageio.forbes.com/specials-images/imageserve/5e67b406aa54280007597c5b/0x0.jpg?format=jpg&crop=592,333,x0,y69,safe&width=1200',
   nameproduct: ' Black Widow',
   info: 'Bộ phim này có thể coi là hành trình đối mặt với quá khứ của Natasha Romanoff, khi cô tạm thời rời khỏi Avengers để trở về điều tra 1 âm mưu khủng khiếp đang diễn ra tại học viện điệp viên The Red Room – cũng là nơi đã trang bị cho cô những kỹ năng bá đạo như hiện nay.'
 
 }
 const product22 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://m.media-amazon.com/images/M/MV5BNTliYjlkNDQtMjFlNS00NjgzLWFmMWEtYmM2Mzc2Zjg3ZjEyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+  image: 'https://i.zoomtventertainment.com/story/Shang-Chi.jpg?tr=w-1200,h-900',
   nameproduct: 'Shang Chi and the legend of the Ten Rings',
   info: 'Shang-Chi, đồng thời cũng là lần đầu tiên vũ trụ điện ảnh này đưa những pha hành động. Ngoài ra, Shang-Chi and the Legend of the Ten Rings sẽ hé lộ thân phận thực sự của ông trùm Mandarin, đồng thời cũng là người cha cực kỳ nghiêm khắc luôn muốn đào tạo Shang-Chi thành 1 sát thủ chuyên nghiệp.'
 
@@ -196,14 +196,14 @@ const product23 = {
 }
 const product24 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://thegioidienanh.vn/stores/news_dataimages/anhvu/112021/08/12/2028_05.jpg?rt=20211108122154',
+  image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYdZwgA0RdFsGhl6wMhvyytt0bOmKHdlIfBw&usqp=CAU',
   nameproduct: 'Spider-Man: No Way Home',
   info: 'Spider-Man: No Way Home xoay quanh cuộc sống đã bị đảo lộn của Peter Parker bởi kẻ phản diện Mysterio đã công bố danh tính thật của cậu chàng là Spider-Man cho cả thế giới biết.Peter yêu cầu sự giúp đỡ của phù thủy toàn năng Doctor Strange nhằm khiến mọi người quên đi danh tính của mình.'
 
 }
 const product25 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UX1000_.jpg',
+  image: 'https://www.slashfilm.com/img/gallery/superhero-bits-the-final-doctor-strange-2-poster-moon-knights-big-episode-is-imminent-more/l-intro-1651012771.jpg',
   nameproduct: 'Doctor Strange in the Multiverse of Madness',
   info: 'Sau sự kiện của Avengers: Hồi kết (2019) và WandaVision (2021), việc nghiên cứu Hòn đá thời gian của Doctor Strange tiếp tục bị gián đoạn bởi một người bạn bỗng chốc biến thành kẻ thù. Chính vì thế, Strange giải phóng sự độc ác “không thể thốt nên lời” của mình.'
 
@@ -217,7 +217,7 @@ const product26 = {
 }
 const product27 = {
   id: Math.round((Math.random() + 1) * 9000000),
-  image: 'https://upload.wikimedia.org/wikipedia/vi/3/3b/Black_Panther_Wakanda_Forever_poster.jpg',
+  image: 'https://guardian.ng/wp-content/uploads/2022/10/Poster-Wakanda-forever-2-1424x802-1.jpeg',
   nameproduct: 'Black Panther: Wakanda Forever',
   info: 'Tác phẩm mở đầu với phân đoạn vua T Challa hấp hối vì mắc một căn bệnh bí ẩn. Shuri cố gắng nghiên cứu để khôi phục loại thần dược Tâm Hình Thảo với niềm tin nó có thể cứu sống anh trai. Tuy nhiên, kế hoạch của cô đổ vỡ khi T Challa trút hơi thở cuối cùng trên giường bệnh trước khi dự án thành công.'
 

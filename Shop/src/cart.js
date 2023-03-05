@@ -148,7 +148,7 @@ let adressform = document.getElementById("address-form")
 
 let checkout = document.getElementById("checkoutbtn")
 checkout.onclick = function() {
-    adressform.style.display = "block";
+    adressform.style.display = "block"
 }
 //address
 let adressbtn = document.getElementById("adress-form")

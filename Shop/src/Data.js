@@ -459,11 +459,5 @@ let shopItemsData = [
     desc: "Ryan,Romita",
     img: "images/marvel19.jpg"
   },
-  {
-    id: "thyfhcb39",
-    name: "Hulk#4",
-    price: 50,
-    desc: "Loeb,Giarrusso",
-    img: "images/marvel20.jpg"
-  },
+  
 ];
