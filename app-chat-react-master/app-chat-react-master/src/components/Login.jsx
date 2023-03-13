@@ -50,7 +50,7 @@ function Login({ callback }) {
             adipisci illo incidunt, necessitatibus modi itaque, distinctio suscipit accusantium
             aperiam, cupiditate ea enim quod debitis cumque sit eum iste.
           </div>
-          <video src={Video1} loop autoplay muted controls>
+          <video src={Video1} loop autoPlay muted controls>
 
           </video>
         </div>

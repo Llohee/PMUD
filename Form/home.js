@@ -237,7 +237,7 @@ let productDOM = `<div class="card">
   <div class="face face2">
       <div class="content">
           <p>${product.info}</p>
-          <a href="#" type="button">Read More</a>
+          <a href="http://localhost:3000/" type="button">Read More</a>
       </div>
   </div>
 </div>`

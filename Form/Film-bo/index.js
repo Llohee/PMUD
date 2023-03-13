@@ -13,37 +13,67 @@ function closeNav() {
 
 
 const product = {
-    id: Math.round((Math.random() + 1) * 9000000),
-    image: 'https://wallpaperaccess.com/full/1925947.jpg',
-    nameproduct: 'Iron Man 1',
-    info: 'Tỉ phú, ông trùm ngành công nghiệp hay nhà phát minh thiên tài Tony Stark (Robert Downey, JR. thủ vai)từng rơi vào tay khủng bố với mục đích giúp chúng xây dựng vũ khí hủy diệt, khi đang tiến hành thử nghiệm vũ khí tại nhiều quốc gia. Trong thời gian bị giam cầm, Stark tự chế tạo bộ giáp giúp bản thân trốn thoát khỏi những kẻ bắt cóc.',
-  }
-  const product1 = {
-    id: Math.round((Math.random() + 1) * 9000000),
-    image: 'https://wallpapercave.com/wp/wp3198167.jpg',
-    nameproduct: 'Iron Man 2',
-    info: 'Sau khi tiết lộ danh tính “Iron Man” trước giới truyền thông, nhà phát minh tỉ phú Tony Stark hiện phải đối mặt với sức ép từ nhiều phía trong việc chia sẻ công nghệ, đặc biệt là từ phía quân đội chính phủ. Nhưng, Stark vẫn từ chối tiết lộ bí mật của bộ giáp vì không muốn công nghệ bị lợi dụng vào những mục đích không chính thống.',
-  }
-  const product2 = {
-    id: Math.round((Math.random() + 1) * 9000000),
-    image: 'https://wallpapercave.com/wp/wp9219239.jpg',
-    nameproduct: 'Iron Man 3',
-    info: 'Trong Người Sắt 3, Tony Stark đối mặt với căng thẳng và vết thương tâm lý do những sự kiện trong Biệt đội siêu anh hùng gây ra, trong khi đang điều tra một loạt các vụ tấn công khủng bố do nhân vật Mandarin bí ẩn lãnh đạo, đồng thời tạo nên xung đột với kẻ thù cũ là Aldrich Killian...',
-  
-  }
-  const product3 = {
-    id: Math.round((Math.random() + 1) * 9000000),
-    image: 'https://wallpapercave.com/wp/wp6705852.jpg',
-    nameproduct: 'The Incredible Hulk',
-    info: 'Nhà khoa học Bruce Banner với mong muốn tìm ra cách chế tạo vũ khí từ tia gamma đã không cẩn thận để các tế bào trong cơ thể bị ô nhiễm và biến thành hình dạng của Hulk. Banner đã quyết định chia tay với Betty Ross cũng là cách để lẩn trốn kẻ thù, Gen. Đại tướng Thunderbolt Ross và Banner nhanh chóng phải đối mặt với hiểm họa mới: Abomination...',
-  
-  }
+  id: Math.round((Math.random() + 1) * 9000000),
+  image: 'https://cdn.marvel.com/content/1x/voicesrisingwf_lob_crd_01.jpg',
+  nameproduct: 'Voices Rising: The Music of Wakanda Forever',
+  info: 'Sự hợp tác của các nhạc sĩ và nghệ sĩ từ khắp nơi trên thế giới, tạo ra âm nhạc cho một trong những phần tiếp theo được mong đợi nhất trong lịch sử điện ảnh hiện đại',
+}
+const product1 = {
+  id: Math.round((Math.random() + 1) * 9000000),
+  image: 'https://m.media-amazon.com/images/M/MV5BOGJjMzlmNzctMWI4Yi00MjcyLWFmYzAtN2JmZjU0YTM4YmRmXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg',
+  nameproduct: 'The Guardians of the Galaxy Holiday Special',
+  info: 'Star-Lord, Drax, Rocket, Mantis và Groot tham gia vào một số trò tai quái đầy tinh thần trong một bộ phim đặc biệt nguyên bản hoàn toàn mới được tạo ra cho Disney+.',
+}
+const product2 = {
+  id: Math.round((Math.random() + 1) * 9000000),
+  image: 'https://preview.redd.it/another-poster-for-werewolf-by-night-v0-tw7lbjoa65n91.png?auto=webp&s=19165e50c030153bbf957d16f8755c5238b30f5c',
+  nameproduct: 'Werewolf by Night.',
+  info: 'Theo chân một siêu anh hùng lycanthrope chiến đấu với cái ác bằng cách sử dụng những khả năng được trao cho anh ta bởi một lời nguyền do dòng máu của anh ta mang lại.',
+
+}
+const product3 = {
+  id: Math.round((Math.random() + 1) * 9000000),
+  image: 'https://image.tmdb.org/t/p/original/wgjzCsT6PhNHACHT7Iscs1QM5vw.jpg',
+  nameproduct: 'She-Hulk: Attorney-at-Law',
+  info: 'Jennifer Walters lèo lái cuộc sống phức tạp của một luật sư độc thân, khoảng 30 tuổi, đồng thời cũng là một Hulk siêu mạnh cao 6 foot 7 inch màu xanh lục.',
+
+}
+const product4 = {
+  id: Math.round((Math.random() + 1) * 9000000),
+  image: 'https://cdn.marvel.com/content/1x/lp_site.jpg',
+  nameproduct: 'I Am Groot',
+  info: 'Một loạt phim ngắn giới thiệu cây giống Groot cùng với một số nhân vật mới và khác thường.',
+
+}
+const product5 = {
+  id: Math.round((Math.random() + 1) * 9000000),
+  image: 'https://assets1.ignimgs.com/2021/05/12/loki-poster-2-1620828778337_160w.jpg?width=1280',
+  nameproduct: 'Loki Season 1',
+  info: 'Sau khi đánh cắp khối Tesseract trong các sự kiện của Avengers: Endgame (2019), một phiên bản thay thế của Loki được đưa đến Cơ quan quản lý phương sai thời gian bí ẩn (TVA). Họ cho Loki một sự lựa chọn: khuôn mặt bị xóa khỏi sự tồn tại do là một "biến thể thời gian", hoặc giúp sửa chữa dòng thời gian và ngăn chặn một mối đe dọa lớn hơn.',
+
+}
+const product6 = {
+  id: Math.round((Math.random() + 1) * 9000000),
+  image: 'https://images.thedirect.com/media/article_full/loki-season-2-renslayer-mcu-marvel-disney-plus.jpg',
+  nameproduct: 'Loki Season 2',
+  info: '',
+
+}
+const product7 = {
+  id: Math.round((Math.random() + 1) * 9000000),
+  image: 'https://ecdn.game4v.com/g4v-content/uploads/2021/04/What-IF-MCU-1-game4v.jpg',
+  nameproduct: 'What if',
+  info: 'Khám phá những khoảnh khắc quan trọng từ Vũ trụ Điện ảnh Marvel và biến chúng thành hiện thực, dẫn dắt khán giả vào lãnh thổ chưa được khám phá.',
+
+}
 
 
 
 
 
-let listProduct = [product, product1, product2, product3 ];
+
+let listProduct = [product, product1, product2, product3, product4, product5, product6, product7];
+
 
 
 let productDOM = `<div class="card">
